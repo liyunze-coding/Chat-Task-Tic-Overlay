@@ -1,4 +1,4 @@
-# Better task list
+# Chat-Task-Tic Overlay
 
 ## Commands
 
@@ -34,6 +34,8 @@
 -    Easy to setup
 -    Easy to customize
 -    No third-party database required
+
+Note: It's only available on Twitch for now
 
 ---
 
