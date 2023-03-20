@@ -84,15 +84,15 @@ Edit `configs.js` to edit the style of the task list
 
 ### fonts
 
-`headerFontFamily` - font family for the header
+`headerFontFamily` - font family for the header \(supports all fonts from [Google Fonts](https://fonts.google.com/) \)
 
-`bodyFontFamily` - font family for the body
+`bodyFontFamily` - font family for the body \(supports all fonts from [Google Fonts](https://fonts.google.com/)\)
 
 ### scroll
 
 `taskListScrollBehaviour` - scroll behaviour for the task list \([supports all css transition-timing-function](https://www.w3schools.com/css/css3_transitions.asp)\), linear and ease-in-out recommended
 
-`pixelsPerSecond` - speed of the scroll in pixels per second
+`pixelsPerSecond` - speed of the scroll in pixels per second (number)
 
 ### task list
 
