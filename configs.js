@@ -2,22 +2,23 @@ const configs = (function () {
 	"use strict";
 
 	// settings
-	const showDoneTasks = true; // true: check the box to mark the task as done, false: delete the task when done
-	const showTasksNumber = true; // show the number of tasks in the header, 'false' recommended if show done tasks is false
-	const crossTasksOnDone = false; // cross the task when done, 'false' recommended if show done tasks is false'
-	const showCheckBox = true; // show the checkbox to mark the task as done (otherwise use bullet points), 'false' recommended if show done tasks is false
+	const showDoneTasks = true; // true or false
+	const showTasksNumber = true; // true or false
+	const crossTasksOnDone = false; // true or false
+	const showCheckBox = true; // true or false
 
 	// fonts
 	const headerFontFamily = "Fredoka One"; // supports all google fonts - https://fonts.google.com/
 	const bodyFontFamily = "Nunito"; // supports all google fonts - https://fonts.google.com/
 
 	// scroll
-	const taskListScrollBehaviour = "linear"; // supports all css transition-timing-function (ease-in-out or linear recommended) - https://www.w3schools.com/css/css3_transitions.asp
+	const taskListScrollBehaviour = "linear"; // supports all css transition-timing-function
 	const pixelsPerSecond = 30; // must be a number
 
 	// task list
 	const taskListWidth = "500px"; // must have px at the end
 	const taskListHeight = "200px"; // must have px at the end
+
 	const taskListBackgroundColor = "#000"; // hex only
 	const taskListBackgroundOpacity = 0; // must be between 0 and 1
 
@@ -25,17 +26,20 @@ const configs = (function () {
 	const taskListBorderWidth = "0px"; // must have px at the end
 	const taskListBorderRadius = "10px"; // must have px at the end
 
-	const numberOfLines = 1; // number of lines
+	const taskListPadding = "10px"; // must have px at the end
 
 	// header
+	const headerHeight = "30px"; // must have px at the end
+	const headerBackgroundColor = "#000"; // hex only
+	const headerBackgroundOpacity = 0.9; // must be between 0 and 1
+
 	const headerBorderColor = "black"; // hex or name
 	const headerBorderWidth = "px"; // must have px at the end
 	const headerBorderRadius = "5px"; // must have px at the end
-	const headerHeight = "30px"; // must have px at the end
+
 	const headerFontSize = "20px"; // must have px at the end
-	const headerBackgroundColor = "#000"; // hex only
-	const headerBackgroundOpacity = 0.9; // must be between 0 and 1
 	const headerFontColor = "white"; // hex or name
+
 	const headerPadding = "10px"; // must have px at the end
 	const tasksNumberFontSize = "20px"; // must have px at the end
 
@@ -51,6 +55,7 @@ const configs = (function () {
 	const bodyHorizontalPadding = "3px"; // must have px at the end
 
 	// task (individual tasks)
+	const numberOfLines = 1; // number of lines for the task
 	const usernameColor = "white"; // hex or name, "" for twitch username color
 
 	const taskFontSize = "16px"; // must have px at the end
@@ -83,6 +88,7 @@ const configs = (function () {
 	const bulletPointCharacter = "🌻"; // any character
 	const bulletPointColor = "white"; // hex or name
 	const bulletPointSize = "15px"; // must have px at the end
+
 	const bulletPointMarginRight = "5px"; // must have px at the end
 	const bulletPointMarginLeft = "5px"; // must have px at the end
 	const bulletPointMarginTop = "-1px"; // must have px at the end
@@ -219,6 +225,7 @@ const configs = (function () {
 		taskListBorderColor,
 		taskListBorderWidth,
 		taskListBorderRadius,
+		taskListPadding,
 		numberOfLines,
 		headerFontColor,
 		headerBorderColor,

@@ -21,7 +21,7 @@ CUSTOMIZATIONS TO ADD:
 	--task-list-border-width: 1px;
 	--task-list-border-radius: 10px;
 
-	--number-of-lines: 1; /* number of lines to show */
+	--task-list-padding: 10px;
 
 	/* header */
 	--header-border-color: black;
@@ -54,6 +54,8 @@ CUSTOMIZATIONS TO ADD:
 	--task-border-radius: 0px;
 	--task-margin-bottom: 10px;
 	--task-padding: 10px;
+
+	--number-of-lines: 1; /* number of lines to show */
 
 	/* check box */
 	--check-box-size: 15px;
@@ -109,6 +111,7 @@ body {
 	border-color: var(--task-list-border-color);
 	border-width: var(--task-list-border-width);
 	border-radius: var(--task-list-border-radius);
+	padding: var(--task-list-padding);
 
 	background: var(--task-list-background-color);
 }

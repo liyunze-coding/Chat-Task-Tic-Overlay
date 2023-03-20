@@ -45,6 +45,7 @@ function importStyles() {
 		"taskListBorderColor",
 		"taskListBorderWidth",
 		"taskListBorderRadius",
+		"taskListPadding",
 		"numberOfLines",
 		"headerBorderColor",
 		"headerBorderWidth",

@@ -1,4 +1,4 @@
-# Chat-Task-Tic Overlay
+# Chat-Task-Tic Overlay (Beta)
 
 ## Commands
 
@@ -52,8 +52,86 @@ Note: It's only available on Twitch for now
 
 ---
 
-## Customizing
+## Customization settings
 
 Edit `configs.js` to edit the style of the task list
+
+### Settings
+
+`showDoneTasks`:
+
+**true**: show the done tasks
+
+**false**: hide the done tasks
+
+`showTaskNumber`:
+
+**true**: show the task number (completed tasks / total tasks)
+
+**false**: hide the task number
+
+`crossTasksOnDone`:
+
+**true**: cross the tasks when they are marked as done
+
+**false**: don't cross the tasks when they are marked as done
+
+`showCheckBox`:
+
+**true**: show the checkbox
+
+**false**: hide the checkbox, use bullet points instead
+
+### fonts
+
+`headerFontFamily` - font family for the header
+
+`bodyFontFamily` - font family for the body
+
+### scroll
+
+`taskListScrollBehaviour` - scroll behaviour for the task list \([supports all css transition-timing-function](https://www.w3schools.com/css/css3_transitions.asp)\), linear and ease-in-out recommended
+
+`pixelsPerSecond` - speed of the scroll in pixels per second
+
+### task list
+
+`taskListWidth` - width of the task list (px)
+
+`taskListHeight` - height of the task list (px)
+
+`taskListBackgroundColor` - background color of the task list (hex only)
+
+`taskListBackgroundOpacity` - background opacity of the task list (0: transparent, 1: opaque, 0.5: half transparent)
+
+`taskListBorderColor` - border color of the task list (hex, name)
+
+`taskListBorderWidth` - border width of the task list (px)
+
+`taskListBorderRadius` - border radius of the task list (px)
+
+### header
+
+`headerHeight` - height of the header (px)
+
+`headerBackgroundColor` - background color of the header (hex only)
+
+`headerBackgroundOpacity` - background opacity of the header (0: transparent, 1: opaque, 0.5: half transparent)
+
+`headerBorderColor` - border color of the header (hex, name)
+
+`headerBorderWidth` - border width of the header (px)
+
+`headerBorderRadius` - border radius of the header (px)
+
+`headerFontSize` - font size of the header (px)
+
+`headerFontColor` - font color of the header (hex, name)
+
+`headerPadding` - padding of the header (px)
+
+`tasksNumberFontSize` - font size of the tasks number (px)
+
+( under construction )
 
 ---
