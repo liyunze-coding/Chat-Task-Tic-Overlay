@@ -263,7 +263,6 @@ function addTasksToDom(username, userColor, task, completed) {
 
 	if (configs.styles.usernameColor == "") {
 		usernameDiv.style.color = userColor;
-		console.log(userColor);
 	}
 
 	newTask.appendChild(usernameDiv);
@@ -300,11 +299,7 @@ function checkUserTask(username) {
 		return false;
 	}
 
-	if (tasks[`${username}-${id}`].done) {
-		return false;
-	} else {
-		return true;
-	}
+	return tasks[`${username}-${id}`].done;
 }
 
 // user adding task
@@ -312,8 +307,6 @@ function addTask(username, userColor, task) {
 	incrementID(username, 1);
 	let tasks = getTasks();
 	let id = getID(username);
-
-	console.log(userColor);
 
 	tasks[`${username}-${id}`] = {
 		userColor: userColor,
@@ -364,10 +357,6 @@ function removeTask(username) {
 function editTask(username, task) {
 	let tasks = getTasks();
 	let id = getID(username);
-
-	if (!checkUserTask(username)) {
-		return console.log(`You don't have a task pending!`);
-	}
 
 	tasks[`${username}-${id}`] = {
 		task: task,
