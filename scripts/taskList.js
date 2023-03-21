@@ -9,7 +9,7 @@ DB structure:
     - username-[id]:
 		- task
 		- done
-		- user-color
+		- userColor
 */
 
 const responses = configs.responses;
@@ -73,6 +73,7 @@ function importStyles() {
 		"checkBoxBorderWidth",
 		"checkBoxMarginTop",
 		"checkBoxMarginLeft",
+		"checkBoxMarginRight",
 		"checkBoxBackgroundColor",
 		"checkBoxBackgroundOpacity",
 		"tickCharacter",
@@ -206,11 +207,15 @@ function renderTaskList() {
 
 	for (let task in tasks) {
 		let taskData = tasks[task];
-		let userColor = tasks["user-color"];
 		let username = task.split("-")[0];
 		let id = task.split("-")[1];
 
-		addTasksToDom(username, userColor, taskData.task, taskData.done);
+		addTasksToDom(
+			username,
+			taskData.userColor,
+			taskData.task,
+			taskData.done
+		);
 	}
 
 	renderTaskCount();
@@ -256,8 +261,9 @@ function addTasksToDom(username, userColor, task, completed) {
 	usernameDiv.className = "username";
 	usernameDiv.innerText = username;
 
-	if (configs.styles.usernameColor == null) {
+	if (configs.styles.usernameColor == "") {
 		usernameDiv.style.color = userColor;
+		console.log(userColor);
 	}
 
 	newTask.appendChild(usernameDiv);
@@ -307,8 +313,10 @@ function addTask(username, userColor, task) {
 	let tasks = getTasks();
 	let id = getID(username);
 
+	console.log(userColor);
+
 	tasks[`${username}-${id}`] = {
-		"user-color": userColor,
+		userColor: userColor,
 		task: task,
 		done: false,
 	};
@@ -383,7 +391,13 @@ function checkTask(username) {
 	let id = getID(username);
 	let tasks = getTasks();
 
-	return tasks[`${username}-${id}`].task;
+	if (tasks[`${username}-${id}`]) {
+		return tasks[`${username}-${id}`].task;
+	} else if (tasks[`${username}-${id - 1}`]) {
+		return tasks[`${username}-${id - 1}`].task;
+	} else {
+		return false;
+	}
 }
 
 // admin delete all tasks of user

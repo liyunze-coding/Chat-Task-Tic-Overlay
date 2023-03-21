@@ -26,7 +26,7 @@ const configs = (function () {
 	const taskListBorderWidth = "0px"; // must have px at the end
 	const taskListBorderRadius = "10px"; // must have px at the end
 
-	const taskListPadding = "10px"; // must have px at the end
+	const taskListPadding = "0px"; // must have px at the end
 
 	// header
 	const headerHeight = "30px"; // must have px at the end
@@ -34,7 +34,7 @@ const configs = (function () {
 	const headerBackgroundOpacity = 0.9; // must be between 0 and 1
 
 	const headerBorderColor = "black"; // hex or name
-	const headerBorderWidth = "px"; // must have px at the end
+	const headerBorderWidth = "0px"; // must have px at the end
 	const headerBorderRadius = "5px"; // must have px at the end
 
 	const headerFontSize = "20px"; // must have px at the end
@@ -44,27 +44,31 @@ const configs = (function () {
 	const tasksNumberFontSize = "20px"; // must have px at the end
 
 	// body
-	const bodyBorderColor = "white"; // hex or name
-	const bodyBorderWidth = "0px"; // must have px at the end
-	const bodyBorderRadius = "0px"; // must have px at the end
 	const bodyBackgroundColor = "#ffffff"; // hex only
 	const bodyBackgroundOpacity = 0; // must be between 0 and 1
 	const bodyFontColor = "white"; // hex or name
+
+	const bodyBorderColor = "white"; // hex or name
+	const bodyBorderWidth = "0px"; // must have px at the end
+	const bodyBorderRadius = "0px"; // must have px at the end
 
 	const bodyVerticalPadding = "5px"; // must have px at the end
 	const bodyHorizontalPadding = "3px"; // must have px at the end
 
 	// task (individual tasks)
 	const numberOfLines = 1; // number of lines for the task
-	const usernameColor = "white"; // hex or name, "" for twitch username color
+	const usernameColor = ""; // hex or name, "" for twitch username color
+
+	const taskBackgroundColor = "#000"; // hex only
+	const taskBackgroundOpacity = 0.5; // must be between 0 and 1
 
 	const taskFontSize = "16px"; // must have px at the end
 	const taskFontColor = "white"; // hex or name
-	const taskBackgroundColor = "#000"; // hex only
-	const taskBackgroundOpacity = 0.5; // must be between 0 and 1
-	const taskBorderRadius = "5px"; // must have px at the end
+
 	const taskBorderColor = "black"; // hex or name
 	const taskBorderWidth = "0px"; // must have px at the end
+	const taskBorderRadius = "5px"; // must have px at the end
+
 	const taskMarginBottom = "5px"; // must have px at the end
 	const taskPadding = "5px"; // must have px at the end
 
@@ -72,30 +76,32 @@ const configs = (function () {
 	const checkBoxSize = "15px"; // must have px at the end
 	const checkBoxBackgroundColor = "#000"; // hex only
 	const checkBoxBackgroundOpacity = 0; // must be between 0 and 1
-	const checkBoxBorderRadius = "3px"; // must have px at the end
+
 	const checkBoxBorderColor = "white"; // hex or name
 	const checkBoxBorderWidth = "1px"; // must have px at the end
+	const checkBoxBorderRadius = "3px"; // must have px at the end
 
 	const checkBoxMarginTop = "3px"; // must have px at the end
 	const checkBoxMarginLeft = "2px"; // must have px at the end
+	const checkBoxMarginRight = "2px"; // must have px at the end
 
 	const tickCharacter = "'✔'"; // any character, must be in single quotes
-	const tickColor = "white"; // hex or name
 	const tickSize = "10px"; // must have px at the end
+	const tickColor = "white"; // hex or name
 	const tickTranslateY = "0px"; // must have px at the end
 
 	// bullet point - if enabled
-	const bulletPointCharacter = "🌻"; // any character
-	const bulletPointColor = "white"; // hex or name
+	const bulletPointCharacter = "•"; // any character
 	const bulletPointSize = "15px"; // must have px at the end
+	const bulletPointColor = "white"; // hex or name
 
-	const bulletPointMarginRight = "5px"; // must have px at the end
+	const bulletPointMarginTop = "0px"; // must have px at the end
 	const bulletPointMarginLeft = "5px"; // must have px at the end
-	const bulletPointMarginTop = "-1px"; // must have px at the end
+	const bulletPointMarginRight = "5px"; // must have px at the end
 
 	// colon
-	const colonMarginRight = "2px"; // must have px at the end
 	const colonMarginLeft = "2px"; // must have px at the end
+	const colonMarginRight = "2px"; // must have px at the end
 
 	// Add task commands - please add commands in the exact format
 	const addTaskCommands = [
@@ -110,6 +116,7 @@ const configs = (function () {
 
 	// Delete task commands - please add commands in the exact format
 	const deleteTaskCommands = [
+		"!taskd",
 		"!taskdel",
 		"!taskdelete",
 		"!deltask",
@@ -201,6 +208,7 @@ const configs = (function () {
 	const adminDeleteTasks = "All of the user's tasks have been deleted";
 	const taskFinished = 'Good job on finishing "{task}" {user}!';
 	const taskCheck = '{user} your current task is: "{task}"';
+	const taskCheckUser = `{user} {user2}'s current task is: "{task}"`;
 	const noTask = "Looks like you don't have a task up there {user}";
 	const noTaskA = "Looks like there is no task from that user there {user}";
 	const notMod = "Permission denied, {user}; Mods only";
@@ -208,9 +216,7 @@ const configs = (function () {
 	const clearedDone = "All finished tasks have been cleared";
 	const ryanpython =
 		"{user} RyanPython is the creator of this bot, check out his Twitch at https://www.twitch.tv/ryanpython";
-	const help = `{user} Use the following commands to help you out - !task !remove !edit !done. For mods !adel @user
-		or !adel user. There are additional aliases as well. If you need any more help, feel free to ping 
-		an available mod to assist you!`;
+	const help = `{user} Use the following commands to help you out - !task !remove !edit !done. For more commands, click here: https://github.com/liyunze-coding/Chat-Task-Tic-Overlay#commands`;
 
 	// Other
 	const styles = {
@@ -261,6 +267,7 @@ const configs = (function () {
 		checkBoxBorderWidth,
 		checkBoxMarginTop,
 		checkBoxMarginLeft,
+		checkBoxMarginRight,
 		checkBoxBackgroundColor,
 		checkBoxBackgroundOpacity,
 		tickCharacter,
@@ -298,6 +305,7 @@ const configs = (function () {
 		noTaskToEdit,
 		taskFinished,
 		taskCheck,
+		taskCheckUser,
 		noTask,
 		noTaskA,
 		notMod,

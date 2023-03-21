@@ -3,29 +3,35 @@ const responseTemplates = configs.responses;
 const settings = configs.settings;
 
 function respond(template, user = "", message = "") {
-	console.log(template);
 	ComfyJS.Say(template.replace("{user}", user).replace("{task}", message));
 }
 
 function isMod(flags) {
-	if (flags.broadcaster || flags.mod) {
-		return true;
-	} else {
-		return false;
-	}
+	return flags.broadcaster || flags.mod;
 }
 
 ComfyJS.onCommand = (user, command, message, flags, extra) => {
 	// check if command is in the list of commands
 	command = `!${command.toLowerCase()}`;
 
-	if (commands.addTaskCommands.includes(command)) {
+	if (
+		(command === "clear" && message === "done") ||
+		commands.adminClearDoneCommands.includes(command)
+	) {
+		if (!isMod(flags)) {
+			// user is not a mod or broadcaster
+			return respond(responseTemplates.notMod, user);
+		}
+		cleardone();
+		respond(responseTemplates.clearedDone, user);
+	} else if (commands.addTaskCommands.includes(command)) {
 		// ADD TASK
 
 		if (checkUserTask(user)) {
 			// check if user has a task pending
-			return respond(responseTemplates.userHasTask, user);
+			return respond(responseTemplates.noTaskAdded, user);
 		}
+
 		addTask(user, extra.userColor, message);
 
 		respond(responseTemplates.taskAdded, user, message);
@@ -63,15 +69,38 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 
 		respond(responseTemplates.taskEdited, user, message);
 	} else if (commands.checkCommands.includes(command)) {
-		// CHECK YOUR OWN TASK
+		// CHECK YOUR OWN TASK OR OTHER PEOPLE'S TASK
 
-		if (!checkUserTask(user)) {
-			// check if user has a task pending
-			return respond(responseTemplates.noTask, user);
+		if (message === "") {
+			if (!checkTask(user)) {
+				// check if user has a task pending
+				return respond(responseTemplates.noTask, user);
+			}
+
+			let currentTask = checkTask(user);
+			respond(responseTemplates.taskCheck, user, currentTask);
+		} else {
+			let mentioned = message.split(" ")[0];
+
+			// remove @ if there is
+			if (mentioned[0] === "@") {
+				mentioned = mentioned.slice(1);
+			}
+
+			if (!checkTask(user)) {
+				// check if user has a task pending
+				return respond(responseTemplates.noTaskA, user);
+			}
+
+			let currentTask = checkTask(mentioned);
+
+			let response = responseTemplates.taskCheckUser;
+
+			// replace {user2} with mentioned user
+			response = response.replace("{user2}", `@${mentioned}`);
+
+			respond(response, user, currentTask);
 		}
-		let currentTask = checkTask(user);
-
-		respond(responseTemplates.taskCheck, user, currentTask);
 	} else if (commands.adminClearAllCommands.includes(command)) {
 		if (!isMod(flags)) {
 			// user is not a mod or broadcaster
@@ -88,13 +117,6 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 		}
 		adminDeleteTask(message);
 		respond(responseTemplates.adminDeleteTasks, user, message);
-	} else if (commands.adminClearDoneCommands.includes(command)) {
-		if (!isMod(flags)) {
-			// user is not a mod or broadcaster
-			return respond(responseTemplates.notMod, user);
-		}
-		cleardone();
-		respond(responseTemplates.clearedDone, user);
 	} else if (command === "!ryanpython") {
 		respond(responseTemplates.ryanpython, user);
 	} else if (commands.helpCommands.includes(command)) {

@@ -62,6 +62,7 @@ CUSTOMIZATIONS TO ADD:
 	--check-box-color: white;
 	--check-box-margin-top: 3px;
 	--check-box-margin-left: 2px;
+	--check-box-margin-right: 2px;
 	--check-box-border-width: 1px;
 	--check-box-border-radius: 0px;
 	--check-box-border-color: white;
@@ -224,6 +225,7 @@ body {
 	align-items: start;
 	margin-top: var(--check-box-margin-top);
 	margin-left: var(--check-box-margin-left);
+	margin-right: var(--check-box-margin-right);
 }
 
 input[type="checkbox"] {
