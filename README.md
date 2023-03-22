@@ -4,6 +4,33 @@
 
 ---
 
+<!-- directory -->
+
+## Content
+
+-    [Chat-Task-Tic Overlay (Beta)](#chat-task-tic-overlay-beta)
+-    [Content](#content)
+-    [Commands](#commands)
+     -    [Moderators only](#moderators-only)
+-    [Why you should use this](#why-you-should-use-this)
+-    [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
+-    [Installation](#installation)
+-    [Customization settings](#customization-settings)
+     -    [settings](#settings)
+     -    [fonts](#fonts)
+     -    [scroll](#scroll)
+     -    [task list](#task-list)
+     -    [header](#header)
+     -    [body](#body)
+     -    [task (individual tasks)](#task-individual-tasks)
+     -    [checkbox](#checkbox)
+     -    [bullet point](#bullet-point)
+     -    [colon](#colon)
+-    [Aliases](#aliases)
+-    [Credits](#credits)
+
+---
+
 ## Commands
 
 -    !task \<task\> - Add a task
@@ -91,7 +118,9 @@ Edit `configs.js` to edit the style of the task list
 
 <img src="./images/labels.jpg" height="200" alt="Chat-Task-Tic Overlay Preview"/>
 
-### Settings
+---
+
+### settings
 
 `showDoneTasks`:
 
@@ -117,6 +146,8 @@ Edit `configs.js` to edit the style of the task list
 
 **false**: hide the checkbox, use bullet points instead
 
+---
+
 ### fonts
 
 `headerFontFamily` - font family for the header \(supports all fonts from [Google Fonts](https://fonts.google.com/) \)
@@ -128,6 +159,8 @@ Edit `configs.js` to edit the style of the task list
 `taskListScrollBehaviour` - scroll behaviour for the task list \([supports all css transition-timing-function](https://www.w3schools.com/css/css3_transitions.asp)\), linear and ease-in-out recommended
 
 `pixelsPerSecond` - speed of the scroll in pixels per second (number)
+
+---
 
 ### task list
 
@@ -144,6 +177,8 @@ Edit `configs.js` to edit the style of the task list
 `taskListBorderWidth` - border width of the task list (px)
 
 `taskListBorderRadius` - border radius of the task list (px)
+
+---
 
 ### header
 
@@ -167,6 +202,8 @@ Edit `configs.js` to edit the style of the task list
 
 `tasksNumberFontSize` - font size of the tasks number (px)
 
+---
+
 ### body
 
 `bodyBackgroundColor` - background color of the body (hex only)
@@ -184,6 +221,8 @@ Edit `configs.js` to edit the style of the task list
 `bodyVerticalPadding` - vertical padding of the body (px)
 
 `bodyHorizontalPadding` - horizontal padding of the body (px)
+
+---
 
 ### task (individual tasks)
 
@@ -208,6 +247,8 @@ Edit `configs.js` to edit the style of the task list
 `taskMarginBottom` - margin bottom of the task (px)
 
 `taskPadding` - padding of the task (px)
+
+---
 
 ### checkbox
 
@@ -237,6 +278,8 @@ Edit `configs.js` to edit the style of the task list
 
 `tickTranslateY` - translate y of the tick (px) (going upwards)
 
+---
+
 ### bullet point
 
 `bulletPointCharacter` - character for the bullet point (string)
@@ -250,6 +293,8 @@ Edit `configs.js` to edit the style of the task list
 `bulletPointMarginLeft` - margin left of the bullet point (px)
 
 `bulletPointMarginRight` - margin right of the bullet point (px)
+
+---
 
 ### colon
 
