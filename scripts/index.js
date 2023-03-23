@@ -27,6 +27,11 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 	} else if (commands.addTaskCommands.includes(command)) {
 		// ADD TASK
 
+		if (message === "") {
+			// check if message is empty
+			return respond(responseTemplates.noTaskContent, user);
+		}
+
 		if (checkUserTask(user)) {
 			// check if user has a task pending
 			return respond(responseTemplates.noTaskAdded, user);
@@ -63,7 +68,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 
 		if (!checkUserTask(user)) {
 			// check if user has a task pending
-			return respond(responseTemplates.noTask, user);
+			return respond(responseTemplates.noTaskToEdit, user);
 		}
 		editTask(user, message);
 
@@ -117,14 +122,13 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 		}
 		adminDeleteTask(message);
 		respond(responseTemplates.adminDeleteTasks, user, message);
-	} else if (command === "!ryanpython") {
-		respond(responseTemplates.ryanpython, user);
 	} else if (commands.helpCommands.includes(command)) {
 		respond(responseTemplates.help, user);
+	} else if (commands.additionalCommands[command]) {
+		respond(commands.additionalCommands[command], user);
 	} else {
 		// command not found
 	}
 };
 
-// ComfyJS.Init("RyanPython");
 ComfyJS.Init(auth.username, `oauth:${auth.oauth}`, [auth.channel]);
