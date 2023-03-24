@@ -35,60 +35,9 @@ function importStyles() {
 	loadGoogleFont(styles.headerFontFamily);
 	loadGoogleFont(styles.bodyFontFamily);
 
-	const stylesToImport = [
-		"headerFontFamily",
-		"bodyFontFamily",
-		"taskListFontSize",
-		"taskListWidth",
-		"taskListHeight",
-		"taskListColor",
-		"taskListBorderColor",
-		"taskListBorderWidth",
-		"taskListBorderRadius",
-		"taskListPadding",
-		"numberOfLines",
-		"headerBorderColor",
-		"headerBorderWidth",
-		"headerBorderRadius",
-		"headerHeight",
-		"headerFontSize",
-		"headerFontColor",
-		"headerPadding",
-		"headerMarginBottom",
-		"tasksNumberFontSize",
-		"bodyBorderColor",
-		"bodyBorderWidth",
-		"bodyBorderRadius",
-		"bodyFontColor",
-		"bodyVerticalPadding",
-		"bodyHorizontalPadding",
-		"taskFontSize",
-		"taskFontColor",
-		"taskBorderRadius",
-		"taskMarginBottom",
-		"taskPadding",
-		"checkBoxSize",
-		"checkBoxBorderColor",
-		"checkBoxBorderRadius",
-		"checkBoxBorderWidth",
-		"checkBoxMarginTop",
-		"checkBoxMarginLeft",
-		"checkBoxMarginRight",
-		"checkBoxBackgroundColor",
-		"checkBoxBackgroundOpacity",
-		"tickCharacter",
-		"tickColor",
-		"tickSize",
-		"tickTranslateY",
-		"bulletPointColor",
-		"bulletPointSize",
-		"bulletPointMarginRight",
-		"bulletPointMarginLeft",
-		"bulletPointMarginTop",
-		"usernameColor",
-		"colonMarginRight",
-		"colonMarginLeft",
-	];
+	const stylesToImport = Object.keys(styles).filter((style) => {
+		return !style.includes("Background");
+	});
 
 	const backgroundStyles = [
 		"taskList",
@@ -291,15 +240,15 @@ function addTasksToDom(username, userColor, task, completed) {
 }
 
 // return true if pending, else false
-function checkUserTask(username) {
+function userHasTask(username) {
 	let tasks = getTasks();
 	let id = getID(username);
 
-	if (!tasks[`${username}-${id}`]) {
+	if (tasks[`${username}-${id}`] == null) {
 		return false;
 	}
 
-	return tasks[`${username}-${id}`].done;
+	return !tasks[`${username}-${id}`].done;
 }
 
 // user adding task

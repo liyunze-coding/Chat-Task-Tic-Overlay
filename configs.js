@@ -199,7 +199,8 @@ const configs = (function () {
 
 	// Responses
 	const taskAdded = 'The task "{task}" has been added, {user}!';
-	const noTaskAdded = 'Looks like you already have "{task}" up there {user}';
+	const noTaskAdded =
+		"Looks like you already have a task up there {user}, use !check to check your last task!";
 	const noTaskContent = "Try using !add the-task-you-are-working-on {user}";
 	const noTaskToEdit = "No task to edit {user}";
 	const taskEdited = 'Task edited to "{task}" {user}';

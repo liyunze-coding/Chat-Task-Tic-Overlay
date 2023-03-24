@@ -32,7 +32,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 			return respond(responseTemplates.noTaskContent, user);
 		}
 
-		if (checkUserTask(user)) {
+		if (userHasTask(user)) {
 			// check if user has a task pending
 			return respond(responseTemplates.noTaskAdded, user);
 		}
@@ -43,7 +43,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 	} else if (commands.finishTaskCommands.includes(command)) {
 		// FINISH TASK
 
-		if (!checkUserTask(user)) {
+		if (!userHasTask(user)) {
 			// check whether user has task, if not, return
 			return respond(responseTemplates.noTask, user);
 		}
@@ -66,7 +66,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 	} else if (commands.editTaskCommands.includes(command)) {
 		// EDIT TASK
 
-		if (!checkUserTask(user)) {
+		if (!userHasTask(user)) {
 			// check if user has a task pending
 			return respond(responseTemplates.noTaskToEdit, user);
 		}
