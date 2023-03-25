@@ -29,19 +29,19 @@ const configs = (function () {
 	const taskListPadding = "0px"; // must have px at the end
 
 	// header
-	const headerHeight = "30px"; // must have px at the end
+	const headerHeight = "60px"; // must have px at the end
 	const headerBackgroundColor = "#000"; // hex only
 	const headerBackgroundOpacity = 0.9; // must be between 0 and 1
 
 	const headerBorderColor = "black"; // hex or name
-	const headerBorderWidth = "0px"; // must have px at the end
-	const headerBorderRadius = "5px"; // must have px at the end
+	const headerBorderWidth = "2px"; // must have px at the end
+	const headerBorderRadius = "10px"; // must have px at the end
 
-	const headerFontSize = "20px"; // must have px at the end
+	const headerFontSize = "30px"; // must have px at the end
 	const headerFontColor = "white"; // hex or name
 
 	const headerPadding = "10px"; // must have px at the end
-	const tasksNumberFontSize = "20px"; // must have px at the end
+	const tasksNumberFontSize = "30px"; // must have px at the end
 
 	// body
 	const bodyBackgroundColor = "#ffffff"; // hex only
@@ -62,7 +62,7 @@ const configs = (function () {
 	const taskBackgroundColor = "#000"; // hex only
 	const taskBackgroundOpacity = 0.5; // must be between 0 and 1
 
-	const taskFontSize = "16px"; // must have px at the end
+	const taskFontSize = "25px"; // must have px at the end
 	const taskFontColor = "white"; // hex or name
 
 	const taskBorderColor = "black"; // hex or name
@@ -70,10 +70,10 @@ const configs = (function () {
 	const taskBorderRadius = "5px"; // must have px at the end
 
 	const taskMarginBottom = "5px"; // must have px at the end
-	const taskPadding = "5px"; // must have px at the end
+	const taskPadding = "10px"; // must have px at the end
 
 	// checkbox - if enabled
-	const checkBoxSize = "15px"; // must have px at the end
+	const checkBoxSize = "20px"; // must have px at the end
 	const checkBoxBackgroundColor = "#000"; // hex only
 	const checkBoxBackgroundOpacity = 0; // must be between 0 and 1
 
@@ -81,14 +81,14 @@ const configs = (function () {
 	const checkBoxBorderWidth = "1px"; // must have px at the end
 	const checkBoxBorderRadius = "3px"; // must have px at the end
 
-	const checkBoxMarginTop = "3px"; // must have px at the end
+	const checkBoxMarginTop = "6px"; // must have px at the end
 	const checkBoxMarginLeft = "2px"; // must have px at the end
 	const checkBoxMarginRight = "2px"; // must have px at the end
 
 	const tickCharacter = "'✔'"; // any character, must be in single quotes
-	const tickSize = "10px"; // must have px at the end
+	const tickSize = "18px"; // must have px at the end
 	const tickColor = "white"; // hex or name
-	const tickTranslateY = "0px"; // must have px at the end
+	const tickTranslateY = "4px"; // must have px at the end
 
 	// bullet point - if enabled
 	const bulletPointCharacter = "•"; // any character
