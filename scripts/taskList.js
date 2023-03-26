@@ -307,10 +307,7 @@ function editTask(username, task) {
 	let tasks = getTasks();
 	let id = getID(username);
 
-	tasks[`${username}-${id}`] = {
-		task: task,
-		done: false,
-	};
+	tasks[`${username}-${id}`].task = task;
 
 	saveTasks(tasks);
 
