@@ -80,6 +80,7 @@ CUSTOMIZATIONS TO ADD:
 
 	/* username */
 	--username-color: white;
+	--username-max-width: 10px;
 
 	/* colon */
 	--colon-margin-right: 2px;
@@ -211,8 +212,11 @@ body {
 .username {
 	color: var(--username-color);
 	font-weight: bold;
+	max-width: var(--username-max-width);
 
 	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .task-div:not(:last-child) {

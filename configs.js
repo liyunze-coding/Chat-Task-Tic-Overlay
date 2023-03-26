@@ -17,7 +17,7 @@ const configs = (function () {
 
 	// task list
 	const taskListWidth = "500px"; // must have px at the end
-	const taskListHeight = "200px"; // must have px at the end
+	const taskListHeight = "410px"; // must have px at the end
 
 	const taskListBackgroundColor = "#000"; // hex only
 	const taskListBackgroundOpacity = 0; // must be between 0 and 1
@@ -33,7 +33,7 @@ const configs = (function () {
 	const headerBackgroundColor = "#000"; // hex only
 	const headerBackgroundOpacity = 0.9; // must be between 0 and 1
 
-	const headerBorderColor = "black"; // hex or name
+	const headerBorderColor = "white"; // hex or name
 	const headerBorderWidth = "2px"; // must have px at the end
 	const headerBorderRadius = "10px"; // must have px at the end
 
@@ -53,14 +53,15 @@ const configs = (function () {
 	const bodyBorderRadius = "0px"; // must have px at the end
 
 	const bodyVerticalPadding = "5px"; // must have px at the end
-	const bodyHorizontalPadding = "3px"; // must have px at the end
+	const bodyHorizontalPadding = "5px"; // must have px at the end
 
 	// task (individual tasks)
-	const numberOfLines = 1; // number of lines for the task
-	const usernameColor = ""; // hex or name, "" for twitch username color
+	const numberOfLines = 2; // number of lines for the task
+	const usernameColor = "white"; // hex or name, "" for twitch username color
+	const usernameMaxWidth = "150px"; // must have px at the end
 
 	const taskBackgroundColor = "#000"; // hex only
-	const taskBackgroundOpacity = 0.5; // must be between 0 and 1
+	const taskBackgroundOpacity = 0.8; // must be between 0 and 1
 
 	const taskFontSize = "25px"; // must have px at the end
 	const taskFontColor = "white"; // hex or name
@@ -255,6 +256,7 @@ const configs = (function () {
 		bodyVerticalPadding,
 		bodyHorizontalPadding,
 		usernameColor,
+		usernameMaxWidth,
 		taskFontSize,
 		taskFontColor,
 		taskBackgroundColor,
