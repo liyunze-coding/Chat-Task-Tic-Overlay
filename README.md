@@ -160,6 +160,8 @@ Edit `configs.js` to edit the style of the task list
 
 `pixelsPerSecond` - speed of the scroll in pixels per second (number)
 
+`animationDelay` - delay of the animation in seconds (number)
+
 ---
 
 ### task list
