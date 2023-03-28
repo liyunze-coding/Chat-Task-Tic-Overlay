@@ -331,7 +331,7 @@ function checkTask(username) {
 	} else if (tasks[`${username}-${id - 1}`]) {
 		return tasks[`${username}-${id - 1}`].task;
 	} else {
-		return false;
+		return "";
 	}
 }
 
@@ -404,6 +404,7 @@ async function animate() {
 	let finalHeight =
 		taskContainerHeight - taskWrapperHeight + verticalPadding * 2;
 	let pixelsPerSecond = configs.styles.pixelsPerSecond;
+	let animationDelay = configs.styles.animationDelay;
 
 	let duration = (finalHeight / pixelsPerSecond) * 1000;
 
@@ -427,7 +428,7 @@ async function animate() {
 	animation.play();
 
 	// wait for animation to finish
-	await sleep(duration * 2);
+	await sleep(duration * 2 + animationDelay * 1000);
 	animate();
 }
 
@@ -459,9 +460,27 @@ function oneLineDoneTasks() {
 }
 
 function multiUserLineTasks() {
-	for (let i = 1; i <= 20; i++) {
-		addTask(`ryan${i}`, "#fff", `test task ${i}`);
-		doneTask(`ryan${i}`);
+	let listOfStreamers = [
+		`cloudydayzzz`,
+		`berryspace`,
+		`MohFocus`,
+		`xeno_hiraeth`,
+		`euphie___`,
+		`unknownnie`,
+		`theyolotato`,
+		`charliosaurus`,
+		`jutstreams`,
+		`mikewhatwhere`,
+		`studypaws`,
+		`pcc_lanezzz`,
+		`workwithjandj`,
+		`studylena`,
+	];
+
+	// loop through list of streamers
+	for (let i = 0; i < listOfStreamers.length; i++) {
+		addTask(listOfStreamers[i], "#fff", `test task ${i}`);
+		doneTask(listOfStreamers[i]);
 	}
 }
 

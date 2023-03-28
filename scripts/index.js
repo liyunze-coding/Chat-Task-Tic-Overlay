@@ -77,7 +77,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 		// CHECK YOUR OWN TASK OR OTHER PEOPLE'S TASK
 
 		if (message === "") {
-			if (!checkTask(user)) {
+			if (checkTask(user) === "") {
 				// check if user has a task pending
 				return respond(responseTemplates.noTask, user);
 			}
@@ -92,7 +92,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 				mentioned = mentioned.slice(1);
 			}
 
-			if (!checkTask(user)) {
+			if (checkTask(mentioned) === "") {
 				// check if user has a task pending
 				return respond(responseTemplates.noTaskA, user);
 			}

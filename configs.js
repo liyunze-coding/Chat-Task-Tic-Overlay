@@ -14,6 +14,7 @@ const configs = (function () {
 	// scroll
 	const taskListScrollBehaviour = "linear"; // supports all css transition-timing-function
 	const pixelsPerSecond = 30; // must be a number
+	const animationDelay = 5; // must be a number (seconds)
 
 	// task list
 	const taskListWidth = "500px"; // must have px at the end
@@ -228,6 +229,7 @@ const configs = (function () {
 		bodyFontFamily,
 		taskListScrollBehaviour,
 		pixelsPerSecond,
+		animationDelay,
 		taskListWidth,
 		taskListHeight,
 		taskListBackgroundColor,
