@@ -212,9 +212,10 @@ body {
 .username {
 	color: var(--username-color);
 	font-weight: bold;
+	width: fit-content;
 	max-width: var(--username-max-width);
-
 	white-space: nowrap;
+
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
@@ -282,4 +283,6 @@ input[type="checkbox"]:checked + label:after {
 	-webkit-line-clamp: var(--number-of-lines);
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+	width: max-content;
+	max-width: 70%;
 }
