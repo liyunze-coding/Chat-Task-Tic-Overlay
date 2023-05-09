@@ -403,33 +403,39 @@ async function animate() {
 
 	let finalHeight =
 		taskContainerHeight - taskWrapperHeight + verticalPadding * 2;
+
 	let pixelsPerSecond = configs.styles.pixelsPerSecond;
 	let animationDelay = configs.styles.animationDelay;
 
 	let duration = (finalHeight / pixelsPerSecond) * 1000;
 
-	// keyframes object in css scroll
-	let keyframes = [
-		{ transform: `translateY(0px)` },
-		{ transform: `translateY(-${finalHeight}px)` },
-	];
+	if (finalHeight > 15) {
+		// keyframes object in css scroll
+		let keyframes = [
+			{ transform: `translateY(0px)` },
+			{ transform: `translateY(-${finalHeight}px)` },
+		];
 
-	// create a new animation object
-	let animation = document
-		.getElementsByClassName("task-container")[0]
-		.animate(keyframes, {
-			duration: duration,
-			iterations: 2,
-			easing: configs.styles.taskListScrollBehaviour,
-			direction: "alternate",
-		});
+		// create a new animation object
+		let animation = document
+			.getElementsByClassName("task-container")[0]
+			.animate(keyframes, {
+				duration: duration,
+				iterations: 2,
+				easing: configs.styles.taskListScrollBehaviour,
+				direction: "alternate",
+			});
 
-	// play the animation
-	animation.play();
+		// play the animation
+		animation.play();
 
-	// wait for animation to finish
-	await sleep(duration * 2 + animationDelay * 1000);
-	animate();
+		// wait for animation to finish
+		await sleep(duration * 2 + animationDelay * 1000);
+		animate();
+	} else {
+		await sleep(animationDelay * 1000);
+		animate();
+	}
 }
 
 // cancel animation for restart (when clearing done, many tasks get cleared)
@@ -467,14 +473,14 @@ function multiUserLineTasks() {
 		`xeno_hiraeth`,
 		`euphie___`,
 		`unknownnie`,
-		`theyolotato`,
-		`charliosaurus`,
-		`jutstreams`,
-		`mikewhatwhere`,
-		`studypaws`,
-		`pcc_lanezzz`,
-		`workwithjandj`,
-		`studylena`,
+		// `theyolotato`,
+		// `charliosaurus`,
+		// `jutstreams`,
+		// `mikewhatwhere`,
+		// `studypaws`,
+		// `pcc_lanezzz`,
+		// `workwithjandj`,
+		// `studylena`,
 	];
 
 	// loop through list of streamers
