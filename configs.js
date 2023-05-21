@@ -74,6 +74,8 @@ const configs = (function () {
 	const taskMarginBottom = "5px"; // must have px at the end
 	const taskPadding = "10px"; // must have px at the end
 
+	const taskMaxWidth = "70%";
+
 	// checkbox - if enabled
 	const checkBoxSize = "20px"; // must have px at the end
 	const checkBoxBackgroundColor = "#000"; // hex only
@@ -268,6 +270,7 @@ const configs = (function () {
 		taskBorderWidth,
 		taskMarginBottom,
 		taskPadding,
+		taskMaxWidth,
 		checkBoxSize,
 		checkBoxBorderColor,
 		checkBoxBorderRadius,

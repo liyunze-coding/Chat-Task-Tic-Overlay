@@ -54,6 +54,7 @@ CUSTOMIZATIONS TO ADD:
 	--task-border-radius: 0px;
 	--task-margin-bottom: 10px;
 	--task-padding: 10px;
+	--task-max-width: 70%;
 
 	--number-of-lines: 1; /* number of lines to show */
 
@@ -284,5 +285,5 @@ input[type="checkbox"]:checked + label:after {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	width: max-content;
-	max-width: 70%;
+	max-width: var(--task-max-width);
 }
