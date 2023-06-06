@@ -1,8 +1,8 @@
 const auth = (function () {
 	// Authentication and channels - required
-	const channel = "YOUR_CHANNEL_HERE"; // your channel
-	const username = "YOUR_BOT_ACCOUNT_HERE"; // bot account
-	const oauth = "OAUTH HERE"; // should be xxxxxxxxxxxx from the bot account, do NOT include the 'oauth:' part
+	const channel = "clarissawrites"; // your channel
+	const username = "writing_task_bot"; // bot account
+	const oauth = "updzj4kq643p9ni6r1cxzrlzgyigwk"; // should be xxxxxxxxxxxx from the bot account, do NOT include the 'oauth:' part
 
 	return {
 		channel,
