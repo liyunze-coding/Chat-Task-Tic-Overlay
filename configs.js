@@ -3,8 +3,8 @@ const configs = (function () {
 
 	// settings
 	const showDoneTasks = true; // true or false
-	const showTasksNumber = true; // true or false
-	const crossTasksOnDone = false; // true or false
+	const showTasksNumber = false; // true or false
+	const crossTasksOnDone = true; // true or false
 	const showCheckBox = true; // true or false
 
 	// fonts
