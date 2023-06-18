@@ -163,7 +163,8 @@ function renderTaskList() {
 			username,
 			taskData.userColor,
 			taskData.task,
-			taskData.done
+			taskData.done,
+			taskData.progress
 		);
 	}
 
@@ -171,11 +172,14 @@ function renderTaskList() {
 }
 
 // adding task to DOM
-function addTasksToDom(username, userColor, task, completed) {
+function addTasksToDom(username, userColor, task, completed, progress) {
 	let taskList = document.getElementsByClassName("task-container")[0];
 
+	let newTaskOuter = document.createElement("div");
+	newTaskOuter.className = "task-div";
+	
 	let newTask = document.createElement("div");
-	newTask.className = "task-div";
+	newTask.className = "task-details";
 
 	if (configs.settings.showCheckBox) {
 		// <div class="checkbox"><input type="checkbox" /><label></label></div>
@@ -234,9 +238,22 @@ function addTasksToDom(username, userColor, task, completed) {
 	}
 
 	newTask.appendChild(taskDiv);
+	
+	newTaskOuter.appendChild(newTask);
+	
+	if (progress && !completed) {
+		let breakDiv = document.createElement("div");
+		breakDiv.className = "flex-break";
+		newTaskOuter.appendChild(breakDiv);
+		
+		let progressDiv = document.createElement("div");
+		progressDiv.className = "task-progress";
+		progressDiv.style = `width: ${progress}%`;
+		newTaskOuter.appendChild(progressDiv);
+	}
 
 	// append to task list
-	taskList.appendChild(newTask);
+	taskList.appendChild(newTaskOuter);
 }
 
 // return true if pending, else false
@@ -300,6 +317,27 @@ function removeTask(username) {
 	renderTaskList();
 
 	return removedTask;
+}
+
+function progressTask(username, progress, isSet) {
+	let id = getID(username);
+	let tasks = getTasks();
+
+	let progressedTask = tasks[`${username}-${id}`];
+
+	if (isSet) {
+		tasks[`${username}-${id}`].progress = progress;
+	} else {
+		tasks[`${username}-${id}`].progress += progress;
+	}
+	if (tasks[`${username}-${id}`].progress>=100) tasks[`${username}-${id}`].progress = 100;
+	if (tasks[`${username}-${id}`].progress<=0) tasks[`${username}-${id}`].progress = 0;
+
+	saveTasks(tasks);
+
+	renderTaskList();
+
+	return progressedTask;
 }
 
 // user editing task

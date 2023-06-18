@@ -63,6 +63,37 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 		let removedTask = removeTask(user);
 
 		respond(responseTemplates.taskDeleted, user, removedTask);
+	} else if (commands.progressTaskCommands.includes(command)) {
+		// PROGRESS TASK
+		if (!userHasTask(user)) {
+			// check if user has a task pending
+			return respond(responseTemplates.noTaskToEdit, user);
+		}
+		let progress = parseInt(message);
+		
+		if (isNaN(progress)) {
+			return respond(responseTemplates.invalidProgress);
+		}
+		
+		let progressedTask = null;
+		
+		if (message.includes('+') || progress < 0) {
+			progressedTask = progressTask(user, progress, false);
+		} else {
+			progressedTask = progressTask(user, progress, true);
+		}
+		if (progressedTask.progress==100) {
+			let finishedTask = "";
+			if (settings.showDoneTasks) {
+				finishedTask = doneTask(user);
+			} else {
+				finishedTask = removeTask(user);
+			}
+
+			return respond(responseTemplates.taskFinished, user, finishedTask);
+		} else {
+			return respond(responseTemplates.taskProgress, user, progressedTask.progress);
+		}
 	} else if (commands.editTaskCommands.includes(command)) {
 		// EDIT TASK
 

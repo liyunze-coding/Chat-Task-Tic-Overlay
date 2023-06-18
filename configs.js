@@ -156,6 +156,15 @@ const configs = (function () {
 		"!done",
 		"!finished",
 	];
+	
+	// Progress task commands - please add commands in the exact format
+	const progressTaskCommands = [
+		"!taskprog",
+		"!taskprogress",
+		"!progtask",
+		"!progress",
+		"!prog",
+	];
 
 	// Check task commands - please add commands in the exact format
 	const checkCommands = [
@@ -219,6 +228,8 @@ const configs = (function () {
 	const clearedAll = "All tasks have been cleared";
 	const clearedDone = "All finished tasks have been cleared";
 	const help = `{user} Use the following commands to help you out - !task !remove !edit !done. For more commands, click here: https://github.com/liyunze-coding/Chat-Task-Tic-Overlay#commands`;
+	const invalidProgress = "Sorry, that's not a valid progress amount. It must be a number between 1 and 100.";
+	const taskProgress = `{user} is now {task}% complete with their task!`;
 
 	const additionalCommands = {
 		"!ryanpython":
@@ -298,6 +309,7 @@ const configs = (function () {
 		addTaskCommands,
 		deleteTaskCommands,
 		editTaskCommands,
+		progressTaskCommands,
 		finishTaskCommands,
 		helpCommands,
 		checkCommands,
@@ -324,6 +336,8 @@ const configs = (function () {
 		adminDeleteTasks,
 		clearedAll,
 		clearedDone,
+		invalidProgress,
+		taskProgress,
 	};
 
 	const settings = {
