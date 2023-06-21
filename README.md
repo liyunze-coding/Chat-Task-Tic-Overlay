@@ -1,4 +1,4 @@
-# Chat-Task-Tic Overlay (Beta)
+# Chat-Task-Tic Widget
 
 <img src="./images/chat-task-tic-thumbnail_1.1.1.jpg" height="200" alt="Chat-Task-Tic Overlay Preview"/>
 
@@ -8,26 +8,26 @@
 
 ## Content
 
--    [Chat-Task-Tic Overlay (Beta)](#chat-task-tic-overlay-beta)
--    [Content](#content)
--    [Commands](#commands)
-     -    [Moderators only](#moderators-only)
--    [Why you should use this](#why-you-should-use-this)
--    [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
--    [Installation](#installation)
--    [Customization settings](#customization-settings)
-     -    [settings](#settings)
-     -    [fonts](#fonts)
-     -    [scroll](#scroll)
-     -    [task list](#task-list)
-     -    [header](#header)
-     -    [body](#body)
-     -    [task (individual tasks)](#task-individual-tasks)
-     -    [checkbox](#checkbox)
-     -    [bullet point](#bullet-point)
-     -    [colon](#colon)
--    [Aliases](#aliases)
--    [Credits](#credits)
+- [Chat-Task-Tic Widget](#chat-task-tic-widget)
+  - [Content](#content)
+  - [Commands](#commands)
+    - [Moderators only](#moderators-only)
+  - [Why you should use this](#why-you-should-use-this)
+  - [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
+  - [Installation](#installation)
+  - [Customization settings](#customization-settings)
+    - [settings](#settings)
+    - [fonts](#fonts)
+    - [scroll](#scroll)
+    - [task list](#task-list)
+    - [header](#header)
+    - [body](#body)
+    - [task (individual tasks)](#task-individual-tasks)
+    - [checkbox](#checkbox)
+    - [bullet point](#bullet-point)
+    - [colon](#colon)
+  - [Aliases](#aliases)
+  - [Credits](#credits)
 
 ---
 

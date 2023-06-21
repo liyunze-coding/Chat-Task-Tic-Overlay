@@ -473,14 +473,14 @@ function multiUserLineTasks() {
 		`xeno_hiraeth`,
 		`euphie___`,
 		`unknownnie`,
-		// `theyolotato`,
-		// `charliosaurus`,
-		// `jutstreams`,
-		// `mikewhatwhere`,
-		// `studypaws`,
-		// `pcc_lanezzz`,
-		// `workwithjandj`,
-		// `studylena`,
+		`theyolotato`,
+		`charliosaurus`,
+		`jutstreams`,
+		`mikewhatwhere`,
+		`studypaws`,
+		`pcc_lanezzz`,
+		`workwithjandj`,
+		`studylena`,
 	];
 
 	// loop through list of streamers
