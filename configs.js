@@ -157,6 +157,9 @@ const configs = (function () {
 		"!finished",
 	];
 
+	// Next task commands - please add commands in the exact format
+	const nextTaskCommands = ["!next", "!nexttask"];
+
 	// Check task commands - please add commands in the exact format
 	const checkCommands = [
 		"!taskc",
@@ -209,6 +212,8 @@ const configs = (function () {
 	const noTaskToEdit = "No task to edit {user}";
 	const taskEdited = 'Task edited to "{task}" {user}';
 	const taskDeleted = 'Task "{task}" has been deleted, {user}';
+	const taskNext =
+		"Good job on finishing the task '{oldTask}'! Now moving onto '{newTask}', {user}!";
 	const adminDeleteTasks = "All of the user's tasks have been deleted";
 	const taskFinished = 'Good job on finishing "{task}" {user}!';
 	const taskCheck = '{user} your current task is: "{task}"';
@@ -299,6 +304,7 @@ const configs = (function () {
 		deleteTaskCommands,
 		editTaskCommands,
 		finishTaskCommands,
+		nextTaskCommands,
 		helpCommands,
 		checkCommands,
 		adminDeleteCommands,
@@ -315,6 +321,7 @@ const configs = (function () {
 		taskEdited,
 		noTaskToEdit,
 		taskFinished,
+		taskNext,
 		taskCheck,
 		taskCheckUser,
 		noTask,

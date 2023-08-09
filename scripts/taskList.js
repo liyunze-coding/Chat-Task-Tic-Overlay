@@ -39,13 +39,7 @@ function importStyles() {
 		return !style.includes("Background");
 	});
 
-	const backgroundStyles = [
-		"taskList",
-		"header",
-		"body",
-		"task",
-		"checkBox",
-	];
+	const backgroundStyles = ["taskList", "header", "body", "task", "checkBox"];
 
 	stylesToImport.forEach((style) => {
 		document.documentElement.style.setProperty(
@@ -314,6 +308,14 @@ function editTask(username, task) {
 	renderTaskList();
 
 	console.log(`@${username} Task edited! `);
+}
+
+// user finish task + add task
+function nextTask(username, userColor, task) {
+	let finishedTask = doneTask(username);
+	addTask(username, userColor, task);
+
+	return finishedTask;
 }
 
 // checks user last task

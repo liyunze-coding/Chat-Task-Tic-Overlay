@@ -122,6 +122,18 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
 		}
 		adminDeleteTask(message);
 		respond(responseTemplates.adminDeleteTasks, user, message);
+	} else if (commands.nextTaskCommands.includes(command)) {
+		if (!userHasTask(user)) {
+			// check if user has a task pending
+			return respond(responseTemplates.noTask, user);
+		}
+
+		let completedTask = nextTask(user, extra.userColor, message);
+		let response = responseTemplates.taskNext;
+		response = response.replace("{oldTask}", completedTask);
+		response = response.replace("{newTask}", message);
+
+		return respond(response, user, message);
 	} else if (commands.helpCommands.includes(command)) {
 		respond(responseTemplates.help, user);
 	} else if (commands.additionalCommands[command]) {
