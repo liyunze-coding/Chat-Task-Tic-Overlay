@@ -535,7 +535,7 @@ setInterval(async () => {
 	let taskTitleText = taskTitle.innerText;
 
 	// cycle through a list of titles
-	let titles = ["!ryanpython", "!taskadd", "!taskdone", "!taskhelp"];
+	const titles = configs.titles;
 
 	// get current title
 	let currentTitle = titles.indexOf(taskTitleText);

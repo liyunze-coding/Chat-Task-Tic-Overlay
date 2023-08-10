@@ -230,6 +230,8 @@ const configs = (function () {
 			"{user} RyanPython is the creator of this bot, check out his Twitch at https://www.twitch.tv/ryanpython",
 	};
 
+	const titles = ["!ryanpython", "!taskadd", "!taskdone", "!taskhelp"];
+
 	// Other
 	const styles = {
 		headerFontFamily,
@@ -345,6 +347,7 @@ const configs = (function () {
 		commands,
 		responses,
 		settings,
+		titles,
 	};
 
 	return module;
