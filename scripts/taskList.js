@@ -145,6 +145,17 @@ function renderTaskList() {
 		}
 	}
 
+	// reverse the order of tasks
+	if (configs.settings.reverseOrder) {
+		let reversedTasks = {};
+		let tasksKeys = Object.keys(tasks);
+		for (let i = tasksKeys.length - 1; i >= 0; i--) {
+			let task = tasksKeys[i];
+			reversedTasks[task] = tasks[task];
+		}
+		tasks = reversedTasks;
+	}
+
 	let taskList = document.getElementsByClassName("task-container")[0];
 	taskList.innerHTML = "";
 

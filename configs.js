@@ -6,6 +6,7 @@ const configs = (function () {
 	const showTasksNumber = true; // true or false
 	const crossTasksOnDone = false; // true or false
 	const showCheckBox = true; // true or false
+	const reverseOrder = true; // true or false
 
 	// fonts
 	const headerFontFamily = "Fredoka One"; // supports all google fonts - https://fonts.google.com/
@@ -340,6 +341,7 @@ const configs = (function () {
 		showTasksNumber,
 		crossTasksOnDone,
 		showCheckBox,
+		reverseOrder,
 	};
 
 	let module = {
