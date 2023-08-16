@@ -4,11 +4,19 @@
 
 ---
 
+## Variations 
+
+- [Infinite Scroll version](https://github.com/liyunze-coding/chat-task-tic-overlay-infinity)
+- [Horizontal Scroll version](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Horizontal)
+
+---
+
 <!-- directory -->
 
 ## Content
 
 - [Chat-Task-Tic Widget](#chat-task-tic-widget)
+  - [Variations](#variations)
   - [Content](#content)
   - [Commands](#commands)
     - [Moderators only](#moderators-only)
