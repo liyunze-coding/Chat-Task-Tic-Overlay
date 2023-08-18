@@ -341,8 +341,6 @@ function checkTask(username) {
 
 	if (tasks[`${username}-${id}`]) {
 		return tasks[`${username}-${id}`].task;
-	} else if (tasks[`${username}-${id - 1}`]) {
-		return tasks[`${username}-${id - 1}`].task;
 	} else {
 		return "";
 	}
