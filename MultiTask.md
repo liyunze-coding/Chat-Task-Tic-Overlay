@@ -16,6 +16,7 @@ Want acccess to the widget for your stream? Join the <a href="https://discord.gg
 -   `!add [task]` : add the task to your list
 -   `!edit (index) [task]` : edit the task at the specified index
 -   `!done (index / task)` : mark task as done
+-   `!undone (index / task)` : mark task as incomplete
 -   `!remove (index / task)` : remove task from list
 -   `!check (@user)` : check (your own / mentioned user's) incomplete and completed tasks
 
@@ -38,6 +39,7 @@ Tip: You can add/remove/mark complete several tasks in 1 command!
 -   `!done task 1, task 2, task 3` (specify task names)
 -   `!done 1, 2, 3` (specify task indexes/indices)
 -   `!done 1 2 3` (specify task indexes/indices without commas)
+-   `!done all`
 
 # Mod only commands
 

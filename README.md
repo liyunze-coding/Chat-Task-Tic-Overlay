@@ -54,6 +54,7 @@
 -   !remove \<task\> - Remove a task
 -   !edit \<task\> - Edit a task
 -   !check - Check your last task
+-   !next \<task\> - marks your current as done and adds a new task
 
 ### Moderators only
 
