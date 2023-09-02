@@ -258,7 +258,6 @@ function userHasTask(username) {
 
 // user adding task
 function addTask(username, userColor, task) {
-	incrementID(username, 1);
 	let tasks = getTasks();
 	let id = getID(username);
 
@@ -284,6 +283,8 @@ function doneTask(username) {
 
 	tasks[`${username}-${id}`].done = true;
 
+	incrementID(username, 1);
+
 	saveTasks(tasks);
 
 	renderTaskList();
@@ -299,6 +300,8 @@ function removeTask(username) {
 	let removedTask = tasks[`${username}-${id}`].task;
 
 	delete tasks[`${username}-${id}`];
+
+	incrementID(username, -1);
 
 	saveTasks(tasks);
 
