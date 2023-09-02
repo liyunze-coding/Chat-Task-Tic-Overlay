@@ -1,4 +1,4 @@
-# Chat-Task-Tic Widget
+# Rython Task Bot
 
 <img src="./images/chat-task-tic-thumbnail_1.1.1.jpg" height="200" alt="Chat-Task-Tic Overlay Preview"/>
 
@@ -22,7 +22,7 @@
 
 ## Content
 
--   [Chat-Task-Tic Widget](#chat-task-tic-widget)
+-   [Rython Task Bot](#rython-task-bot)
     -   [Videos](#videos)
     -   [Variations](#variations)
     -   [Content](#content)
@@ -53,7 +53,7 @@
 -   !done \<task\> - Mark a task as done
 -   !remove \<task\> - Remove a task
 -   !edit \<task\> - Edit a task
--   !check - Check your last task
+-   !check - Check your last incomplete task
 -   !next \<task\> - marks your current as done and adds a new task
 
 ### Moderators only
