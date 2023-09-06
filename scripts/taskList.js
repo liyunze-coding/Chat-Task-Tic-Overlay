@@ -541,16 +541,13 @@ function hexToRgb(hex) {
 	return `${r}, ${g}, ${b}`;
 }
 
+let currentTitle = 0;
 // interval the task title
 setInterval(async () => {
 	let taskTitle = document.getElementById("title");
-	let taskTitleText = taskTitle.innerText;
 
 	// cycle through a list of titles
 	const titles = configs.titles;
-
-	// get current title
-	let currentTitle = titles.indexOf(taskTitleText);
 
 	// if current title is the last title, set it to the first title
 	if (currentTitle === titles.length - 1) {
