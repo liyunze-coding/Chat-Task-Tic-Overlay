@@ -6,6 +6,12 @@ Want acccess to the widget for your stream? Join the <a href="https://discord.gg
 
 ---
 
+# Follow the creator of the bot!
+
+Hi! I frequently stream co-working & study so please drop a follow, thank you <3
+
+-   <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
+
 # Basic commands
 
 `()` : optional, if there's only 1 incomplete task

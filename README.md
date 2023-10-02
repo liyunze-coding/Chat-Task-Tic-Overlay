@@ -49,6 +49,8 @@
 
 ## Commands
 
+BTW I stream on <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
+
 -   !task \<task\> - Add a task
 -   !done \<task\> - Mark a task as done
 -   !remove \<task\> - Remove a task
