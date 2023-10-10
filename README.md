@@ -11,9 +11,9 @@
 
 ---
 
-## Variations
+## Variations (PLEASE USE INFINITE SCROLL VERSION INSTEAD OF THIS)
 
--   [Infinite Scroll version](https://github.com/liyunze-coding/chat-task-tic-overlay-infinity)
+-   [Infinite Scroll version](https://github.com/liyunze-coding/chat-task-tic-overlay-infinity) (RECOMMENDED)
 -   [Horizontal Scroll version](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Horizontal)
 
 ---
@@ -24,7 +24,7 @@
 
 -   [Rython Task Bot](#rython-task-bot)
     -   [Videos](#videos)
-    -   [Variations](#variations)
+    -   [Variations (PLEASE USE INFINITE SCROLL VERSION INSTEAD OF THIS)](#variations-please-use-infinite-scroll-version-instead-of-this)
     -   [Content](#content)
     -   [Commands](#commands)
         -   [Moderators only](#moderators-only)
