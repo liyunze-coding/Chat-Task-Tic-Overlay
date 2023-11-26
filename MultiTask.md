@@ -4,6 +4,8 @@ Multi-Task Widget is a task widget that allows you to add multiple tasks at one 
 
 Want acccess to the widget for your stream? Join the <a href="https://discord.gg/UnHyHkhbga" target="_blank">Discord server</a>!
 
+[Spanish translation](#Widget-de-Tareas-Múltiples)
+
 ---
 
 # Follow the creator of the bot!
@@ -75,4 +77,85 @@ If you like my work, consider supporting me on ko-fi!
 -    `!resetuserscount` : resets users' task count, board count won't be affected
 -    `!setboardcount [integer]` : set the board count to [integer], users' task count won't be affected
 
-\* = count won't be affected at all
+\* count won't be affected at all
+
+---
+
+# Widget de Tareas Múltiples
+
+El Widget de Tareas Múltiples es un widget de tareas que te permite agregar múltiples tareas a la vez.
+
+¿Quieres acceso al widget para tu transmisión? ¡Únete al [servidor de Discord](https://discord.gg/UnHyHkhbga)!
+
+---
+
+# Sigue al creador del bot
+
+¡Hola! Transmito frecuentemente co-working y estudio, así que por favor sígueme si disfrutas usando el bot de tareas, ¡gracias <3!
+
+-    [https://www.twitch.tv/RythonDev](https://www.twitch.tv/RythonDev)
+
+Si te gusta mi trabajo, considera apoyarme en ko-fi!
+
+-    [https://www.ko-fi.com/Rython](https://www.ko-fi.com/Rython)
+
+# Comandos básicos
+
+`()` : opcional, si hay solo 1 tarea incompleta
+
+`[]` : requerido
+
+-    `!taskhelp` : muestra el mensaje de ayuda
+-    `!add [tarea]` : agrega la tarea a tu lista
+-    `!focus (índice / tarea)` : enfócate en UNA tarea
+-    `!edit (índice) [tarea]` : edita la tarea en el índice especificado
+-    `!done (índice / tarea)` : marca la tarea como hecha
+-    `!undone (índice / tarea)` : marca la tarea como incompleta
+-    `!remove (índice / tarea)` : elimina la tarea de la lista
+-    `!check (@usuario)` : verifica las tareas incompletas (propias / del usuario mencionado)
+-    `!mytasks` : verifica tus propias tareas incompletas
+-    `!count (@usuario)` : verifica el número de tareas completadas (propias / del usuario mencionado)
+-    `!boardcount` : verifica cuántas tareas han sido completadas por todos en el chat
+-    `!points (@usuario)` : verifica cuántos puntos (tú / usuario mencionado) ha ganado
+
+## Consejos:
+
+-    ¡Puedes agregar/eliminar/marcar como completas varias tareas en 1 comando!
+-    Cuando te enfocas en una tarea, no solo se resaltará en el widget, sino que la tarea seleccionada tendrá prioridad cuando uses `!done`
+
+## Múltiples tareas en un solo comando
+
+### Comando de Agregar
+
+-    `!add tarea 1, tarea 2, tarea 3`
+
+### Comando de Eliminar
+
+-    `!remove tarea 1, tarea 2, tarea 3` (especifica nombres de tareas)
+-    `!remove 1, 2, 3` (especifica índices de tareas sin nombres)
+-    `!remove 1 2 3` (especifica índices de tareas sin comas)
+
+### Comando de Completar
+
+-    `!done tarea 1, tarea 2, tarea 3` (especifica nombres de tareas)
+-    `!done 1, 2, 3` (especifica índices de tareas sin nombres)
+-    `!done 1 2 3` (especifica índices de tareas sin comas)
+-    `!done all`
+
+# Comandos de Administrador
+
+## Solo para Moderadores
+
+-    `!adel @usuario` : borra todas las tareas del usuario mencionado
+
+## Solo para el Streamer
+
+-    `!clearall` : borra todas las tareas y el conteo
+-    `!cleartasks` : borra todas las tareas\*
+-    `!cleardone` : borra todas las tareas completadas\*
+-    `!clearns` : borra todas las tareas excluyendo las tareas incompletas del streamer\*
+-    `!resetboardcount` : reinicia el conteo del tablero, el conteo de tareas de los usuarios individuales no se verá afectado
+-    `!resetuserscount` : reinicia el conteo de tareas de los usuarios, el conteo del tablero no se verá afectado
+-    `!setboardcount [entero]` : establece el conteo del tablero a [entero], el conteo de tareas de los usuarios no se verá afectado
+
+\* el conteo no se verá afectado en absoluto

@@ -29,6 +29,8 @@
      -    [Commands](#commands)
           -    [Moderators only](#moderators-only)
      -    [Why you should use this](#why-you-should-use-this)
+     -    [Comandos](#comandos)
+          -    [Solo Moderadores](#solo-moderadores)
      -    [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
      -    [Installation](#installation)
      -    [Customization settings](#customization-settings)
@@ -53,20 +55,20 @@ BTW I stream on <a target="_blank" href="https://www.twitch.tv/RythonDev">https:
 
 If you like my work, consider supporting me on my ko-fi! <a target="_blank" href="https://www.ko-fi.com/Rython">https://www.ko-fi.com/Rython</a>
 
--    !task \<task\> - Add a task
--    !done \<task\> - Mark a task as done
--    !remove \<task\> - Remove a task
--    !edit \<task\> - Edit a task
--    !check - Check your last incomplete task
--    !next \<task\> - marks your current as done and adds a new task
+-    `!task <task>` - Add a task
+-    `!done <task>` - Mark a task as done
+-    `!remove <task>` - Remove a task
+-    `!edit <task>` - Edit a task
+-    `!check (@user)` - Check your last incomplete task
+-    `!next <task>` - marks your current as done and adds a new task
 
 ### Moderators only
 
--    !clear - Clear all tasks
--    !cleardone - Clear all done tasks
--    !adel @user - Remove all tasks from a user
+-    `!clear` - Clear all tasks
+-    `!cleardone` - Clear all done tasks
+-    `!adel @user` - Remove all tasks from a user
 
-For aliases, see [here](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay#aliases)
+For aliases, see [here](#aliases)
 
 ---
 
@@ -79,6 +81,29 @@ For aliases, see [here](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay#
 -    No third-party database required
 
 Note: It's only available on Twitch for now
+
+---
+
+## Comandos
+
+PD: Transmito en <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
+
+Si te gusta mi trabajo, considera apoyarme en mi ko-fi! <a target="_blank" href="https://www.ko-fi.com/Rython">https://www.ko-fi.com/Rython</a>
+
+-    !tarea \<tarea\> - Agregar una tarea
+-    !hecho \<tarea\> - Marcar una tarea como hecha
+-    !eliminar \<tarea\> - Eliminar una tarea
+-    !editar \<tarea\> - Editar una tarea
+-    !verificar - Verificar tu última tarea incompleta
+-    !siguiente \<tarea\> - Marcar tu tarea actual como hecha y agregar una nueva tarea
+
+### Solo Moderadores
+
+-    !limpiar - Borrar todas las tareas
+-    !limpiarhechas - Borrar todas las tareas completadas
+-    !adel @usuario - Eliminar todas las tareas de un usuario
+
+Para alias, consulta [aquí](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay#aliases)
 
 ---
 
@@ -434,7 +459,7 @@ Note: You can also use it like this: `!check @user` or `!check user`
 
 ## Credits
 
-**Author:** [**@RyanPython**](https://twitch.tv/RyanPython)
+**Author:** [**@RythonDev**](https://twitch.tv/RythonDev)
 
 <!-- contributed -->
 
