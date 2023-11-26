@@ -12,6 +12,10 @@ Hi! I frequently stream co-working & study so please drop a follow if you enjoy 
 
 -    <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
 
+If you like my work, consider supporting me on ko-fi!
+
+-    https://www.ko-fi.com/Rython
+
 # Basic commands
 
 `()` : optional, if there's only 1 incomplete task
