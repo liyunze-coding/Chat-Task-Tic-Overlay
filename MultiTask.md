@@ -2,7 +2,9 @@
 
 Multi-Task Widget is a task widget that allows you to add multiple tasks at one time!
 
-Want acccess to the widget for your stream? Join the <a href="https://discord.gg/UnHyHkhbga" target="_blank">Discord server</a>!
+Want acccess to the multi-task widget for your stream? Buy it on <a href="https://ko-fi.com/s/94e7e8dc81" target="_blank">Ko-Fi</a>
+
+Join the <a href="https://discord.gg/UnHyHkhbga" target="_blank">Discord server</a>!
 
 [Spanish translation](#Widget-de-Tareas-Múltiples)
 
@@ -12,11 +14,11 @@ Want acccess to the widget for your stream? Join the <a href="https://discord.gg
 
 Hi! I frequently stream co-working & study so please drop a follow if you enjoy using the task bot, thank you <3
 
--    <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
+-    <a target="_blank" href="https://www.twitch.tv/RythonDev">https://twitch.tv/RythonDev</a>
 
 If you like my work, consider supporting me on ko-fi!
 
--    https://www.ko-fi.com/Rython
+-    <a target="_blank" href="https://www.ko-fi.com/Rython">https://ko-fi.com/Rython</a>
 
 # Basic commands
 

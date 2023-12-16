@@ -28,9 +28,9 @@
      -    [Content](#content)
      -    [Commands](#commands)
           -    [Moderators only](#moderators-only)
-     -    [Why you should use this](#why-you-should-use-this)
      -    [Comandos](#comandos)
           -    [Solo Moderadores](#solo-moderadores)
+     -    [Why you should use this](#why-you-should-use-this)
      -    [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
      -    [Installation](#installation)
      -    [Customization settings](#customization-settings)
@@ -53,7 +53,9 @@
 
 BTW I stream on <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
 
-If you like my work, consider supporting me on my ko-fi! <a target="_blank" href="https://www.ko-fi.com/Rython">https://www.ko-fi.com/Rython</a>
+Want acccess to the multi-task widget for your stream? Buy it on <a href="https://ko-fi.com/s/94e7e8dc81" target="_blank">Ko-Fi</a>!
+
+Join the <a href="https://discord.gg/UnHyHkhbga" target="_blank">Discord server</a>!
 
 -    `!task <task>` - Add a task
 -    `!done <task>` - Mark a task as done
@@ -64,11 +66,32 @@ If you like my work, consider supporting me on my ko-fi! <a target="_blank" href
 
 ### Moderators only
 
--    `!clear` - Clear all tasks
+-    `!clearall` - Clear all tasks
 -    `!cleardone` - Clear all done tasks
 -    `!adel @user` - Remove all tasks from a user
 
 For aliases, see [here](#aliases)
+
+## Comandos
+
+PD: Transmito en <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
+
+Quieres acceso al widget de tareas múltiples para tu transmisión? ¡Cómpralo en <a target="_blank" href="https://ko-fi.com/s/94e7e8dc81">Ko-Fi</a>!
+
+-    `!task <tarea>` - Agregar una tarea
+-    `!done <tarea>` - Marcar una tarea como hecha
+-    `!remove <tarea>` - Eliminar una tarea
+-    `!edit <tarea>` - Editar una tarea
+-    `!check (@usuario)` - Verificar tu última tarea incompleta
+-    `!next <tarea>` - Marcar tu tarea actual como hecha y agregar una nueva tarea
+
+### Solo Moderadores
+
+-    `!clearall` - Borrar todas las tareas
+-    `!cleardone` - Borrar todas las tareas completadas
+-    `!adel @usuario` - Eliminar todas las tareas de un usuario
+
+Para alias, consulta [aquí](#aliases)
 
 ---
 
@@ -81,29 +104,6 @@ For aliases, see [here](#aliases)
 -    No third-party database required
 
 Note: It's only available on Twitch for now
-
----
-
-## Comandos
-
-PD: Transmito en <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
-
-Si te gusta mi trabajo, considera apoyarme en mi ko-fi! <a target="_blank" href="https://www.ko-fi.com/Rython">https://www.ko-fi.com/Rython</a>
-
--    !tarea \<tarea\> - Agregar una tarea
--    !hecho \<tarea\> - Marcar una tarea como hecha
--    !eliminar \<tarea\> - Eliminar una tarea
--    !editar \<tarea\> - Editar una tarea
--    !verificar - Verificar tu última tarea incompleta
--    !siguiente \<tarea\> - Marcar tu tarea actual como hecha y agregar una nueva tarea
-
-### Solo Moderadores
-
--    !limpiar - Borrar todas las tareas
--    !limpiarhechas - Borrar todas las tareas completadas
--    !adel @usuario - Eliminar todas las tareas de un usuario
-
-Para alias, consulta [aquí](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay#aliases)
 
 ---
 
