@@ -6,15 +6,15 @@
 
 ## Videos
 
--    [Setup + Customization details](https://youtu.be/-5EdJcvDuFQ)
--    [Setup without Visual Studio Code](https://youtu.be/7lK16yn6ho0)
+-   [Setup + Customization details](https://youtu.be/-5EdJcvDuFQ)
+-   [Setup without Visual Studio Code](https://youtu.be/7lK16yn6ho0)
 
 ---
 
 ## Variations (PLEASE USE INFINITE SCROLL VERSION INSTEAD OF THIS)
 
--    [Infinite Scroll version](https://github.com/liyunze-coding/chat-task-tic-overlay-infinity) (RECOMMENDED)
--    [Horizontal Scroll version](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Horizontal)
+-   [Infinite Scroll version](https://github.com/liyunze-coding/chat-task-tic-overlay-infinity) (RECOMMENDED)
+-   [Horizontal Scroll version](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Horizontal)
 
 ---
 
@@ -22,53 +22,55 @@
 
 ## Content
 
--    [Rython Task Bot](#rython-task-bot)
-     -    [Videos](#videos)
-     -    [Variations (PLEASE USE INFINITE SCROLL VERSION INSTEAD OF THIS)](#variations-please-use-infinite-scroll-version-instead-of-this)
-     -    [Content](#content)
-     -    [Commands](#commands)
-          -    [Moderators only](#moderators-only)
-     -    [Comandos](#comandos)
-          -    [Solo Moderadores](#solo-moderadores)
-     -    [Why you should use this](#why-you-should-use-this)
-     -    [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
-     -    [Installation](#installation)
-     -    [Customization settings](#customization-settings)
-          -    [settings](#settings)
-          -    [fonts](#fonts)
-          -    [scroll](#scroll)
-          -    [task list](#task-list)
-          -    [header](#header)
-          -    [body](#body)
-          -    [task (individual tasks)](#task-individual-tasks)
-          -    [checkbox](#checkbox)
-          -    [bullet point](#bullet-point)
-          -    [colon](#colon)
-     -    [Aliases](#aliases)
-     -    [Credits](#credits)
+-   [Rython Task Bot](#rython-task-bot)
+    -   [Videos](#videos)
+    -   [Variations (PLEASE USE INFINITE SCROLL VERSION INSTEAD OF THIS)](#variations-please-use-infinite-scroll-version-instead-of-this)
+    -   [Content](#content)
+    -   [Commands](#commands)
+        -   [Moderators only](#moderators-only)
+    -   [Comandos](#comandos)
+        -   [Solo Moderadores](#solo-moderadores)
+    -   [Why you should use this](#why-you-should-use-this)
+    -   [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
+    -   [Installation](#installation)
+    -   [Customization settings](#customization-settings)
+        -   [settings](#settings)
+        -   [fonts](#fonts)
+        -   [scroll](#scroll)
+        -   [task list](#task-list)
+        -   [header](#header)
+        -   [body](#body)
+        -   [task (individual tasks)](#task-individual-tasks)
+        -   [checkbox](#checkbox)
+        -   [bullet point](#bullet-point)
+        -   [colon](#colon)
+    -   [Aliases](#aliases)
+    -   [Credits](#credits)
 
 ---
 
 ## Commands
 
-BTW I stream on <a target="_blank" href="https://www.twitch.tv/RythonDev">https://www.twitch.tv/RythonDev</a>
+This task widget has been provided for free
+
+Support me on <a target="_blank" href="https://www.twitch.tv/RythonDev">twitch.tv/RythonDev</a> or <a target="_blank" href="https://ko-fi.com/Rython">ko-fi/rython</a>!
 
 Want acccess to the multi-task widget for your stream? Buy it on <a href="https://ko-fi.com/s/94e7e8dc81" target="_blank">Ko-Fi</a>!
 
 Join the <a href="https://discord.gg/UnHyHkhbga" target="_blank">Discord server</a>!
 
--    `!task <task>` - Add a task
--    `!done <task>` - Mark a task as done
--    `!remove <task>` - Remove a task
--    `!edit <task>` - Edit a task
--    `!check (@user)` - Check your last incomplete task
--    `!next <task>` - marks your current as done and adds a new task
+-   `!task <task>` - Add a task
+-   `!done <task>` - Mark a task as done
+-   `!remove <task>` - Remove a task
+-   `!edit <task>` - Edit a task
+-   `!check (@user)` - Check your last incomplete task
+-   `!next <task>` - marks your current as done and adds a new task
 
 ### Moderators only
 
--    `!clearall` - Clear all tasks
--    `!cleardone` - Clear all done tasks
--    `!adel @user` - Remove all tasks from a user
+-   `!clearall` - Clear all tasks
+-   `!cleardone` - Clear all done tasks
+-   `!adel @user` - Remove all tasks from a user
 
 For aliases, see [here](#aliases)
 
@@ -78,18 +80,18 @@ PD: Transmito en <a target="_blank" href="https://www.twitch.tv/RythonDev">https
 
 Quieres acceso al widget de tareas múltiples para tu transmisión? ¡Cómpralo en <a target="_blank" href="https://ko-fi.com/s/94e7e8dc81">Ko-Fi</a>!
 
--    `!task <tarea>` - Agregar una tarea
--    `!done <tarea>` - Marcar una tarea como hecha
--    `!remove <tarea>` - Eliminar una tarea
--    `!edit <tarea>` - Editar una tarea
--    `!check (@usuario)` - Verificar tu última tarea incompleta
--    `!next <tarea>` - Marcar tu tarea actual como hecha y agregar una nueva tarea
+-   `!task <tarea>` - Agregar una tarea
+-   `!done <tarea>` - Marcar una tarea como hecha
+-   `!remove <tarea>` - Eliminar una tarea
+-   `!edit <tarea>` - Editar una tarea
+-   `!check (@usuario)` - Verificar tu última tarea incompleta
+-   `!next <tarea>` - Marcar tu tarea actual como hecha y agregar una nueva tarea
 
 ### Solo Moderadores
 
--    `!clearall` - Borrar todas las tareas
--    `!cleardone` - Borrar todas las tareas completadas
--    `!adel @usuario` - Eliminar todas las tareas de un usuario
+-   `!clearall` - Borrar todas las tareas
+-   `!cleardone` - Borrar todas las tareas completadas
+-   `!adel @usuario` - Eliminar todas las tareas de un usuario
 
 Para alias, consulta [aquí](#aliases)
 
@@ -97,11 +99,11 @@ Para alias, consulta [aquí](#aliases)
 
 ## Why you should use this
 
--    Free
--    Easy to use
--    Easy to setup
--    Easy to customize
--    No third-party database required
+-   Free
+-   Easy to use
+-   Easy to setup
+-   Easy to customize
+-   No third-party database required
 
 Note: It's only available on Twitch for now
 
@@ -371,89 +373,89 @@ Edit `configs.js` to edit the style of the task list
 
 **add task commands:**
 
--    `!addtask`
--    `!add`
--    `!task`
--    `!taska`
--    `!taskadd`
--    `!atask`
--    `!todo`
+-   `!addtask`
+-   `!add`
+-   `!task`
+-   `!taska`
+-   `!taskadd`
+-   `!atask`
+-   `!todo`
 
 **delete task commands:**
 
--    `!taskd`
--    `!taskdel`
--    `!taskdelete`
--    `!deltask`
--    `!deletetask`
--    `!taskr`
--    `!taskremove`
--    `!rtask`
--    `!removetask`
--    `!remove`
--    `!delete`
+-   `!taskd`
+-   `!taskdel`
+-   `!taskdelete`
+-   `!deltask`
+-   `!deletetask`
+-   `!taskr`
+-   `!taskremove`
+-   `!rtask`
+-   `!removetask`
+-   `!remove`
+-   `!delete`
 
 **edit task commands:**
 
--    `taske`
--    `taskedit`
--    `etask`
--    `edittask`
--    `edit`
+-   `taske`
+-   `taskedit`
+-   `etask`
+-   `edittask`
+-   `edit`
 
 **finish task commands:**
 
--    `!taskf`
--    `!taskfinish`
--    `!ftask`
--    `!finishtask`
--    `!taskdone`
--    `!donetask`
--    `!finish`
--    `!done`
--    `!finished`
+-   `!taskf`
+-   `!taskfinish`
+-   `!ftask`
+-   `!finishtask`
+-   `!taskdone`
+-   `!donetask`
+-   `!finish`
+-   `!done`
+-   `!finished`
 
 **check commands:** \(check last task of yourself or user\)
 
--    `!taskc`
--    `!taskcheck`
--    `!ctask`
--    `!checktask`
--    `!mytask`
--    `!check`
+-   `!taskc`
+-   `!taskcheck`
+-   `!ctask`
+-   `!checktask`
+-   `!mytask`
+-   `!check`
 
 Note: You can also use it like this: `!check @user` or `!check user`
 
 **help commands:**
 
--    `!taskh`
--    `!taskhelp`
--    `!htask`
--    `!helptask`
--    `!tasks`
+-   `!taskh`
+-   `!taskhelp`
+-   `!htask`
+-   `!helptask`
+-   `!tasks`
 
 **admin delete commands:** \(delete a task from a user\) \(mods only\)
 
--    `!taskadel`
--    `!adel`
--    `!adelete`
--    `!admindelete`
+-   `!taskadel`
+-   `!adel`
+-   `!adelete`
+-   `!admindelete`
 
 **admin clear done commands:** \(clear all done tasks from list\) \(mods only\)
 
--    `!acleardone`
--    `!admincleardone`
--    `!cleardone`
+-   `!acleardone`
+-   `!admincleardone`
+-   `!cleardone`
 
 **admin clear all commands:** \(clear all tasks from list\) \(mods only\)
 
--    `!clearall`
--    `!allclear`
--    `!adminclearall`
--    `!adminallclear`
--    `!aclearall`
--    `!aclear`
--    `!clear`
+-   `!clearall`
+-   `!allclear`
+-   `!adminclearall`
+-   `!adminallclear`
+-   `!aclearall`
+-   `!aclear`
+-   `!clear`
 
 ---
 
@@ -465,11 +467,11 @@ Note: You can also use it like this: `!check @user` or `!check user`
 
 **Contributors:**
 
--    [**@MohFocus**](https://twitch.tv/MohFocus) \(helped with the code\)
+-   [**@MohFocus**](https://twitch.tv/MohFocus) \(helped with the code\)
 
 **Special thanks to:**
 
--    [**@Instafluff**](https://twitch.tv/Instafluff) \(for the Comfy JS library\)
+-   [**@Instafluff**](https://twitch.tv/Instafluff) \(for the Comfy JS library\)
 
 **Shoutout to the following streamers for using my task list:** \(if you use my task list, please let me know and I'll add you to this list\)
 
