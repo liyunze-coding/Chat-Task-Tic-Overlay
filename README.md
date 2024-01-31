@@ -22,30 +22,30 @@
 
 ## Content
 
--   [Rython Task Bot](#rython-task-bot)
-    -   [Videos](#videos)
-    -   [Variations (PLEASE USE INFINITE SCROLL VERSION INSTEAD OF THIS)](#variations-please-use-infinite-scroll-version-instead-of-this)
-    -   [Content](#content)
-    -   [Commands](#commands)
-        -   [Moderators only](#moderators-only)
-    -   [Comandos](#comandos)
-        -   [Solo Moderadores](#solo-moderadores)
-    -   [Why you should use this](#why-you-should-use-this)
-    -   [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
-    -   [Installation](#installation)
-    -   [Customization settings](#customization-settings)
-        -   [settings](#settings)
-        -   [fonts](#fonts)
-        -   [scroll](#scroll)
-        -   [task list](#task-list)
-        -   [header](#header)
-        -   [body](#body)
-        -   [task (individual tasks)](#task-individual-tasks)
-        -   [checkbox](#checkbox)
-        -   [bullet point](#bullet-point)
-        -   [colon](#colon)
-    -   [Aliases](#aliases)
-    -   [Credits](#credits)
+- [Rython Task Bot](#rython-task-bot)
+  - [Videos](#videos)
+  - [Variations (PLEASE USE INFINITE SCROLL VERSION INSTEAD OF THIS)](#variations-please-use-infinite-scroll-version-instead-of-this)
+  - [Content](#content)
+  - [Commands](#commands)
+    - [Moderators only](#moderators-only)
+  - [Comandos](#comandos)
+    - [Solo Moderadores](#solo-moderadores)
+  - [Why you should use this](#why-you-should-use-this)
+  - [For Twitch Task Overlay users (my old task list)](#for-twitch-task-overlay-users-my-old-task-list)
+  - [Installation](#installation)
+  - [Customization settings](#customization-settings)
+    - [settings](#settings)
+    - [fonts](#fonts)
+    - [scroll](#scroll)
+    - [task list](#task-list)
+    - [header](#header)
+    - [body](#body)
+    - [task (individual tasks)](#task-individual-tasks)
+    - [checkbox](#checkbox)
+    - [bullet point](#bullet-point)
+    - [colon](#colon)
+  - [Aliases](#aliases)
+  - [Credits](#credits)
 
 ---
 
@@ -53,7 +53,9 @@
 
 This task widget has been provided for free
 
-Support me on <a target="_blank" href="https://www.twitch.tv/RythonDev">twitch.tv/RythonDev</a> or <a target="_blank" href="https://ko-fi.com/Rython">ko-fi/rython</a>!
+Leave a star [here](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Infinity) if you like it!
+
+Support me on <a target="_blank" href="https://www.twitch.tv/RythonDev">twitch.tv/RythonDev</a> or <a target="_blank" href="https://ko-fi.com/Rython">ko-fi.com/rython</a>!
 
 Want acccess to the multi-task widget for your stream? Buy it on <a href="https://ko-fi.com/s/94e7e8dc81" target="_blank">Ko-Fi</a>!
 
