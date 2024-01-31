@@ -117,6 +117,7 @@ const configs = (function () {
 		"!task",
 		"!add",
 		"!todo",
+		"!a",
 	];
 
 	// Delete task commands - please add commands in the exact format
@@ -132,6 +133,7 @@ const configs = (function () {
 		"!removetask",
 		"!remove",
 		"!delete",
+		"!r",
 	];
 
 	// Edit task commands - please add commands in the exact format
@@ -141,6 +143,7 @@ const configs = (function () {
 		"!etask",
 		"!edittask",
 		"!edit",
+		"!e",
 	];
 
 	// Finish task commands - please add commands in the exact format
@@ -156,10 +159,11 @@ const configs = (function () {
 		"!finish",
 		"!done",
 		"!finished",
+		"!f",
 	];
 
 	// Next task commands - please add commands in the exact format
-	const nextTaskCommands = ["!next", "!nexttask"];
+	const nextTaskCommands = ["!next", "!nexttask", "!n"];
 
 	// Check task commands - please add commands in the exact format
 	const checkCommands = [
@@ -169,6 +173,7 @@ const configs = (function () {
 		"!checktask",
 		"!mytask",
 		"!check",
+		"!c",
 	];
 
 	// Help commands - please add commands in the exact format
