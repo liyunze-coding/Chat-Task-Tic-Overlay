@@ -71,7 +71,7 @@ If you like my work, consider supporting me on ko-fi!
 
 ## Streamer only
 
--    `!clearall` : clears all tasks and count
+-    `!clearallnoregrets` / `!clearall` : clears all tasks and count
 -    `!cleartasks` : clears all tasks\*
 -    `!cleardone` : clears all done tasks\*
 -    `!clearns` : clear all tasks excluding streamer's incomplete tasks\*
