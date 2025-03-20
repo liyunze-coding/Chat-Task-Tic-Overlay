@@ -53,6 +53,8 @@
 
 This task widget has been provided for free
 
+Made by [RythonDev](https://rython.dev/)
+
 Leave a star [here](https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Infinity) if you like it!
 
 Support me on <a target="_blank" href="https://www.twitch.tv/RythonDev">twitch.tv/RythonDev</a> or <a target="_blank" href="https://ko-fi.com/Rython">ko-fi.com/rython</a>!

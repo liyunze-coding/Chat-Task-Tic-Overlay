@@ -1,5 +1,7 @@
 # Multi-Task Widget
 
+Made by [RythonDev](https://rython.dev/)
+
 Multi-Task Widget is a task widget that allows you to add multiple tasks at one time!
 
 Want acccess to the multi-task widget for your stream? Buy it on <a href="https://ko-fi.com/s/94e7e8dc81" target="_blank">Ko-Fi</a>
